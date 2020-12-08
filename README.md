@@ -15,9 +15,11 @@
   * 목적 : 라즈베리파이와 카메라 센서, 도어락을 이용해 기존 '버튼 및 리모콘 도어락'을 보완, 개선
   
   * 모듈 구성도
+  
    ![슬라이드6](https://user-images.githubusercontent.com/71058308/101472201-39e8f700-3983-11eb-97dc-17f221855242.PNG)
    
   * 동작 방식 
+  
    ![슬라이드9](https://user-images.githubusercontent.com/71058308/101472404-88969100-3983-11eb-9c7f-1418448ae587.PNG)
    
    ![슬라이드10](https://user-images.githubusercontent.com/71058308/101472409-89c7be00-3983-11eb-84bc-17c92892c80a.PNG)
