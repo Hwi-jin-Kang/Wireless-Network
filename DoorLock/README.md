@@ -16,3 +16,4 @@
 
 ## 내부 구조도
 ![KakaoTalk_20201208_183741322](https://user-images.githubusercontent.com/71259069/101466459-85e86b80-3984-11eb-9658-fc200c5fd143.jpg)
+![tact-sw-6-500](https://user-images.githubusercontent.com/71259069/101466652-baf4be00-3984-11eb-8742-40080f84b984.jpg)
