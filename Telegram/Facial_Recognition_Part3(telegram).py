@@ -72,10 +72,10 @@ while True:
             #################telegram send Photo, Message########################
             telegram_id='1446929504'
             my_token = '1499970896:AAGpsbRzUTrNZZo_wDQ7BTzIhRKCiUALsKI'
-            cv2.imwrite('/home/pi/work1/Facial-Recognition/image/image.jpg',image)
-            bot = telepot.Bot(my_token)              
+            cv2.imwrite('/home/pi/work1/Facial-Recognition/image/image.jpg',image) #인식되면 해당경로로 이미지 저장
+            bot = telepot.Bot(my_token)         
             msg = 'open the door!'
-            bot.sendPhoto(chat_id = telegram_id, photo=open('/home/pi/work1/Facial-Recognition/image/image.jpg','rb'))
+            bot.sendPhoto(chat_id = telegram_id, photo=open('/home/pi/work1/Facial-Recognition/image/image.jpg','rb')) #저장된 이미지를 
             bot.sendMessage(chat_id = telegram_id, text = msg)
             #####################################################################
 
