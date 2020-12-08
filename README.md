@@ -5,7 +5,7 @@
 * 강휘진, 곽범수, 백재원, 임진수, 진재혁
 
 # 벤치마킹
- [도어락](http://mibediy.blogspot.com/2016/02/4-iot-hw.html)
+ [도어락->IOT](http://mibediy.blogspot.com/2016/02/4-iot-hw.html)
 
 
 # 아이디어
