@@ -69,6 +69,7 @@ while True:
             cv2.putText(image, "Unlocked", (250, 450), cv2.FONT_HERSHEY_COMPLEX, 1, (0, 255, 0), 2)
             cv2.imshow('Face Cropper', image)
             #telegram, zigbee
+            #################telegram send Photo, Message########################
             telegram_id='1446929504'
             my_token = '1499970896:AAGpsbRzUTrNZZo_wDQ7BTzIhRKCiUALsKI'
             cv2.imwrite('/home/pi/work1/Facial-Recognition/image/image.jpg',image)
@@ -76,7 +77,7 @@ while True:
             msg = 'open the door!'
             bot.sendPhoto(chat_id = telegram_id, photo=open('/home/pi/work1/Facial-Recognition/image/image.jpg','rb'))
             bot.sendMessage(chat_id = telegram_id, text = msg)
-            
+            #####################################################################
 
         else:
             cv2.putText(image, "Locked", (250, 450), cv2.FONT_HERSHEY_COMPLEX, 1, (0, 0, 255), 2)
