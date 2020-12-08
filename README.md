@@ -8,8 +8,8 @@
  [도어락->IOT](http://mibediy.blogspot.com/2016/02/4-iot-hw.html)
 
 
-# 아이디어
-* 얼굴 인식 도어락
+# 프로젝트 정보
+## 얼굴 인식 도어락
   * 개요 : [기사](http://www.ablenews.co.kr/News/NewsContent.aspx?CategoryCode=0014&NewsCode=001420190502111917597795)를 읽고 '리모컨 도어락'에도 불편함, 개선사항이 있을 것으로 판단돼 프로젝트를 진행
   
   * 목적 : 라즈베리파이와 카메라 센서, 도어락을 이용해 기존 '버튼 및 리모콘 도어락'을 보완, 개선
