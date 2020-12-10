@@ -1,0 +1,6 @@
+import serial
+
+port = "/dev/ttyUSB0"
+ard = serial.Serial(port,9600)
+
+ard.write(1)
