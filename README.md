@@ -27,6 +27,9 @@
 
    ![슬라이드11](https://user-images.githubusercontent.com/71058308/101472413-89c7be00-3983-11eb-9d12-4b745a464b27.PNG)
 
+   [동작 영상](https://www.youtube.com/watch?v=3K4KkrcV4Vw)
+   
+   
 # 파일 리스트
 * 
 
