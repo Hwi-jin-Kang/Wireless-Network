@@ -2,6 +2,28 @@
 
 실행 순서는 part1부터 3까지.
 
+## OpenCV 라이브러리를 사용함
+
+OpenCV는 오픈 소스 컴퓨터 비전 및 머신러닝 소프트웨어 라이브러리입니다. (실시간 이미지 프로세싱에 중점을 둔 라이브러리)
+라이브러리에는 2,500개 이상의 최적화 된 최첨단 컴퓨터 비전, 머신러닝 그리고 고전적인 알고리즘이 포함되어 있습니다. 이러한 알고리즘들을 통해서 얼굴 감지 및 인식, 물체 식별, 비디오에서 사람 행동 분류, 카메라 움직임 추적, 다수의 물체에서 움직이는 물체를 추적 등을 할 수 있습니다.
+
+본 프로젝트에서 사용한 OpenCV는 4.5.0 버전을 사용했습니다.
+
+OpenCV 사용과 본 프로젝트에 사용할 패키지 또는 서브 라이브러리 등들 설치합니다.
+- build-essential : 패키지에는 C/C++ 컴파일러와 관련 라이브러리, make 같은 도구들이 포함되어 있습니다.
+cmake는 컴파일 옵션이나 빌드된 라이브러리에 포함시킬 OpenCV 모듈 설정등을 위해 필요합니다. 
+- libjpeg-dev libtiff5-dev libjasper-dev libpng12-dev : 특정 포맷의 이미지 파일을 불러오거나 기록하기 위해 필요한 패키지들
+- libavcodec-dev libavformat-dev libswscale-dev libxvidcore-dev libx264-dev libxine2-dev : 특정 코덱의 비디오 파일/스트리밍을 읽어오거나 기록하기 위해 필요한 FFmpeg 관련 패키지들
+- Video4Linux 패키지 : 리눅스에서 실시간 비디오 캡처를 지원하기 위한 디바이스 드라이버와 API를 포함하고 있습니다. 
+- GStreamer 관련 패키지 : 특정 코덱의 비디오 파일/스트리밍을 읽어오거나 기록하기 위해 필요
+- gtk2 : OpenCV에서는 highgui 모듈을 사용하여 자체적으로 윈도우 생성하여 이미지나 영상을 보여줍니다.  
+윈도우 생성 등의 GUI를 위해 gtk 또는 qt를 선택해서 사용가능합니다. 
+- mesa-utils libgl1-mesa-dri libgtkgl2.0-dev libgtkglext1-dev : OpenGL 지원하기 위해 필요한 라이브러리
+- libatlas-base-dev gfortran libeigen3-dev : OpenCV 최적화를 위해 사용되는 라이브러리들 
+- python2.7-dev python3-dev python-numpy python3-numpy : python2.7-dev와 python3-dev 패키지는 파이썬을 위한 헤더파일과 라이브러리가 포함된  패키지들입니다. Numpy는 매트릭스 연산등을 빠르게 처리할 수 있어서 OpenCV Python에서 사용됩니다. 
+
+등등이 있습니다.
+
 ----------------------------------------------
 face_part1.py : 사용자 얼굴 등록 - 학습할 얼굴을 촬영하는 단계.
   흑백으로 얼굴 크기 200x200 만큼 얼굴을 인식 -> 촬영 / 총 100장
