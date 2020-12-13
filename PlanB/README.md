@@ -1,30 +1,29 @@
-# Facial-Recognition
-Facial Recognition with Open-Cv Python
+# Plan B (완료)
+얼굴 검출과 학습, 인식 완료
 
-Prerequisite:
+얼굴 인식 -> 도어락 시스템 작동 (Open)
 
-Python 3.x
+사용 모듈 : 라즈베리파이 1, 파이카메라, 릴레이 모듈, 도어락
+-> 라즈베리 파이 하나에 다이렉트 연결
 
-Open-Cv Python 
+# Plan A (개발중)
+기존 Plan B에서 라즈베리파이 2개를 이용하여 지그비 통신으로 얼굴 인식과 도어락 Open
 
-Web Cam
+동작 : 카메라로 얼굴이 인식되면 A지그비 통신 -> B지그비로 인식 완료 값을 받아 도어락 Open
 
+# 진행 보고 
 
-Run Process:
+2020/12/01
+- 텔레그램 통신 성공
 
-First Step--> 
+2020/12/04
+- 얼굴 검출 및 인식 성공
 
-Put them in a single folder. Create a folder name faces.
+2020/12/07
+- 릴레이 모듈 + 도어락 동작 성공
 
+2020/12/08
+- 얼굴 인식 프로그램과 텔레그램 통신 성공
 
-Second Step-->
-
-First, run Facial_Recognition_Part1.py. It will take your 100-copy picture for training the machine. The photos will be stored in the faces folder.
-
-Third Step-->
-
-Then run the Facial_Recognition_Part2.py. This is to train your machine.
-
-Fourth Step-->
-
-Then run the Facial_Recognition_Part3.py. This will give the output.
+2020/12/11
+- 얼굴 인식 -> 도어락 Open(다이렉트) 성공 -> 텔레그램 
