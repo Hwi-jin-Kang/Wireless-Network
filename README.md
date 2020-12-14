@@ -4,11 +4,6 @@
 # 팀원
 * 강휘진, 곽범수, 백재원, 임진수, 진재혁
 
-# 벤치마킹
- [도어락->IOT](http://mibediy.blogspot.com/2016/02/4-iot-hw.html)
-
- [openCV](https://m.blog.naver.com/PostView.nhn?blogId=chandong83&logNo=221436424539&proxyReferer=https:%2F%2Fblog.naver.com%2Fchandong83%2F221436424539)
-
 # 프로젝트 정보
 ## 얼굴 인식 도어락
   * 개요 : [기사](http://www.ablenews.co.kr/News/NewsContent.aspx?CategoryCode=0014&NewsCode=001420190502111917597795)를 읽고 '리모컨 도어락'에도 불편함, 개선사항이 있을 것으로 판단돼 프로젝트를 진행
@@ -35,7 +30,16 @@
     
     계산 효율성과 실시간 응용 프로그램에 중점을 두고 설계됨
 
-   [동작 영상](https://www.youtube.com/watch?v=3K4KkrcV4Vw)
+    
    
+  * 참고
+  
+    [도어락->IOT](http://mibediy.blogspot.com/2016/02/4-iot-hw.html)
+  
+    [openCV](https://m.blog.naver.com/PostView.nhn?blogId=chandong83&logNo=221436424539&proxyReferer=https:%2F%2Fblog.naver.com%2Fchandong83%2F221436424539)
+    
+  * 유튜브 영상
+  
+    [동작 영상](https://www.youtube.com/watch?v=3K4KkrcV4Vw)
 ## 파일 리스트
   * 
