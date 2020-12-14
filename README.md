@@ -26,18 +26,16 @@
    ![슬라이드10](https://user-images.githubusercontent.com/71058308/101472409-89c7be00-3983-11eb-84bc-17c92892c80a.PNG)
 
    ![슬라이드11](https://user-images.githubusercontent.com/71058308/101472413-89c7be00-3983-11eb-9d12-4b745a464b27.PNG)
+   
+  * openCV란? 
+  
+    Open Source Computer Vision
+    
+    영상/동영상 처리에 사용할 수 있는 오픈소스 라이브러리
+    
+    계산 효율성과 실시간 응용 프로그램에 중점을 두고 설계됨
 
    [동작 영상](https://www.youtube.com/watch?v=3K4KkrcV4Vw)
    
-   
-# 파일 리스트
-* 
-
-# 
-* 
-
-# 
-* 
-
-# 
-* 
+## 파일 리스트
+  * 
