@@ -33,15 +33,11 @@ AM_OSCILLOSCOPE = 0x93
 class OscilloscopeMsg(tos.Packet):
     def __init__(self, packet = None):
         tos.Packet.__init__(self,
-                            [('srcID',  'int', 2),
-                             ('seqNo', 'int', 2),
-                             ('ch1', 'int', 2),
-                             ('ch2', 'int', 2),
-                             ('ch3', 'int', 2),
+                            [('srcID',  'int', 2)
                              ],
                             packet)
 if '-h' in sys.argv:
-    print "Usage:", sys.argv[0], "serial@/dev/ttyUSB0:57600"
+    print "Usage:", sys.argv[0], "serial@/dev/ttyUSB0:9600"
     sys.exit()
 
 am = tos.AM()
@@ -53,6 +49,6 @@ while True:
     msg = OscilloscopeMsg(p.data)
     print p
 ####### ZLeak Sensor Logic ############
-    print "ID:",msg.srcID, "seqNo:",msg.seqNo, "ch1:",msg.ch1, "ch2:",msg.ch2, "ch3:",msg.ch3
+    print msg.srcID
 
 
