@@ -22,6 +22,8 @@ cmake는 컴파일 옵션이나 빌드된 라이브러리에 포함시킬 OpenCV
 - libatlas-base-dev gfortran libeigen3-dev : OpenCV 최적화를 위해 사용되는 라이브러리들 
 - python2.7-dev python3-dev python-numpy python3-numpy : python2.7-dev와 python3-dev 패키지는 파이썬을 위한 헤더파일과 라이브러리가 포함된  패키지들입니다. Numpy는 매트릭스 연산등을 빠르게 처리할 수 있어서 OpenCV Python에서 사용됩니다. 
 
+NumPy는 행렬이나 일반적으로 대규모 다차원 배열을 쉽게 처리 할 수 있도록 지원하는 파이썬의 라이브러리이다.
+
 등등이 있습니다.
 
 ----------------------------------------------
