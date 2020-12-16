@@ -8,13 +8,13 @@ from os.path import isfile, join # isfile -> 경로가 파일인지 아닌지 �
 data_path = 'faces/' # faces폴더에 있는 파일 리스트 얻기 
 onlyfiles = [f for f in listdir(data_path) if isfile(join(data_path,f))]
 
-Training_Data, Labels = [], []
+Training_Data, Labels = [], [] # 데이터와 매칭될 라벨 변수
 
-for i, files in enumerate(onlyfiles): # in enumerate -> 반복문 사용시 몇번째 반복문인지 확인일 필요할때 사용함
+for i, files in enumerate(onlyfiles): #파일 개수만큼 루프, 반복문 사용시 몇번째 반복문인지 확인일 필요할때 사용함
     image_path = data_path + onlyfiles[i]
     images = cv2.imread(image_path, cv2.IMREAD_GRAYSCALE) # cv2.imread -> 이미지 파일을 읽는 함수, 절대/상대 경로 설정 가능
     Training_Data.append(np.asarray(images, dtype=np.uint8))
-    Labels.append(i)
+    Labels.append(i) # Labels 리스트엔 카운트 번호 추가
 
 Labels = np.asarray(Labels, dtype=np.int32)
 # asarray와 array중 asarray를 사용한 이유는 array는 복사본을 만든 후 저장하고, asarray는 복사본 없이 값을 저장
@@ -24,7 +24,7 @@ Labels = np.asarray(Labels, dtype=np.int32)
 model = cv2.face.LBPHFaceRecognizer_create()
 # LBPH를 사용할 새 변수 생성
 #LBPHFaceRecognizer란 추출된 얼굴 이미지의 dataset을 구성하고 이 dataset에 포함된 각각의 얼굴이미지에 대해 특성을 분석하여 데이터에 저장
-model.train(np.asarray(Training_Data), np.asarray(Labels))
+model.train(np.asarray(Training_Data), np.asarray(Labels)) # 학습 시작
 
 print("Model Training Complete!!!!!")
 
