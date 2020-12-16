@@ -4,7 +4,7 @@
 #ard = serial.Serial(port, 9600)
 
 #while 1:
-#	str = ard.read()
+#	str = ard.read()  # write에서 쓴 거 read로 받아오려 했으나 실패
 #	print(str)
 
 
@@ -37,7 +37,7 @@ class OscilloscopeMsg(tos.Packet):
                              ],
                             packet)
 if '-h' in sys.argv:
-    print "Usage:", sys.argv[0], "serial@/dev/ttyUSB0:9600"
+    print "Usage:", sys.argv[0], "serial@/dev/ttyUSB0:9600" # 시리얼 통신 9600으로 변경
     sys.exit()
 
 am = tos.AM()
@@ -51,4 +51,4 @@ while True:
 ####### ZLeak Sensor Logic ############
     print msg.srcID
 
-
+# python zig3 serial@/dev/ttyUSB0:9600 로 실행
