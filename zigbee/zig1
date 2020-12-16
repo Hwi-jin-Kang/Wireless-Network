@@ -1,8 +1,8 @@
 import serial
 
-port = "/dev/ttyUSB0"
-ard = serial.Serial(port,9600)
+port = "/dev/ttyUSB0"  # USB0 번 포트 사용
+ard = serial.Serial(port,9600) # 시리얼 통신 하기 위한 설정
 
-ard.write(1)
+ard.write(1) # ard에 1을 저장
 
 print("1")
